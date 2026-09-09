@@ -62,3 +62,4 @@ write to Confluence (`confluence.py` is read-only). Since production
 defaults to reading Confluence first, a locally-written cookbook needs a
 manual follow-up: paste it into a new `Cookbook: <title>` child page under
 the Confluence parent above.
+# gate test 1788938734
