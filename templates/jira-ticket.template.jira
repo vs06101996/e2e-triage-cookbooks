@@ -1,0 +1,59 @@
+# E2E Auto-Triage — JIRA ticket template (POC)
+#
+# Developers: edit this file to change mock/production ticket shape.
+# Placeholders use {{NAME}} syntax; filled by src/e2e_triage/jira_draft.py
+#
+# Wiki markup (ngage Jira). Production format may be updated later.
+
+h1. {{MODE}} — {{SUMMARY}}
+
+h2. Summary
+{{SUMMARY}}
+
+h2. Issue Type
+{{ISSUE_TYPE}}
+
+h2. Priority
+{{PRIORITY}}
+
+h2. Labels
+{{LABELS}}
+
+h2. Build
+* TeamCity: {{BUILD_URL}}
+* Build ID: {{BUILD_ID}}
+* Config: {{CONFIG_LABEL}}
+* Status: {{BUILD_STATUS}}
+
+h2. Failed tests
+{{FAILED_TESTS}}
+
+h2. Issue
+{{ISSUE}}
+
+h2. Evidence
+{code}
+{{EVIDENCE}}
+{code}
+
+h2. RCA
+{{RCA}}
+
+h2. Debug steps (from cookbook)
+{{DEBUG_STEPS}}
+
+h2. Validation
+{{VALIDATION_NOTES}}
+
+{{VALIDATE_SECTION}}
+
+h2. Reference
+* Cookbook: {{COOKBOOK_PATH}}
+* Prior Jira: {{PRIOR_JIRA}}
+* Defect type: {{DEFECT_TYPE}}
+* Match score: {{MATCH_SCORE}} | Confidence: {{CONFIDENCE}}
+* Resolution: {{RESOLUTION}}
+
+h2. Triage decision
+* Create ticket: {{CREATE_TICKET}}
+* Rationale: {{RATIONALE}}

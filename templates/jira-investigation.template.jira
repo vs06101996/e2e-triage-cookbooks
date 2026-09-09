@@ -1,0 +1,38 @@
+# E2E Auto-Triage — Investigation ticket template (POC)
+#
+# Used only when no cookbook matched (phase 1: e2e-cookbook-index found no
+# candidates) and phase 3 (e2e-code-rca) found a plausible code-level root
+# cause. Placeholders filled by
+# src/e2e_triage/jira_draft.py::build_investigation_jira_draft
+#
+# Wiki markup (ngage Jira). Local-only for now — no Confluence source page.
+
+h1. E2E Auto-Triage — Investigation — {{SUMMARY}}
+
+h2. Summary
+{{SUMMARY}}
+
+h2. Build
+* TeamCity: {{BUILD_URL}}
+* Build ID: {{BUILD_ID}}
+* Config: {{CONFIG_LABEL}}
+* Status: {{BUILD_STATUS}}
+
+h2. Failed tests
+{{FAILED_TESTS}}
+
+h2. Evidence
+{code}
+{{EVIDENCE}}
+{code}
+
+h2. Suspected root cause (code-based RCA — no cookbook match)
+{{RCA}}
+
+h2. Suspected files
+{{SUSPECTED_FILES}}
+
+h2. Triage decision
+* Decision: create_investigation_ticket
+* Confidence: {{CONFIDENCE}}
+* Rationale: {{RATIONALE}}
